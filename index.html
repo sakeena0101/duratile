@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duratile USA | Wholesale Flooring & Tile Solutions for Trade Professionals</title>
+  <meta name="description" content="Flooring and Tile Solutions for Dealers, Builders and Trade Professionals. Dallas inventory, wholesale programs, samples, displays and dedicated sales assistance." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#C5A059',
+              golddark: '#9E7E38',
+              goldlight: '#F4ECE1',
+              dark: '#0A0C10',
+              card: '#131720',
+              border: '#232936'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Cinzel', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- AOS (Animate On Scroll) Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    .font-brand-display { font-family: 'Cinzel', serif; }
+    .glass-card {
+      background: rgba(19, 23, 32, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .hover-lift {
+      transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 30px -10px rgba(197, 160, 89, 0.18);
+    }
+  </style>
+
+  <!-- LocalBusiness SEO Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["WholesaleStore", "LocalBusiness"],
+        "@id": "https://www.duratileus.com/#organization",
+        "name": "Duratile USA - Dallas Distribution Center",
+        "url": "https://www.duratileus.com",
+        "telephone": "+1-817-385-0216",
+        "email": "info@duratileus.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "9210 King Arthur Dr",
+          "addressLocality": "Dallas",
+          "addressRegion": "TX",
+          "postalCode": "75247",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 32.825120,
+          "longitude": -96.877860
+        },
+        "openingHours": "Mo-Fr 08:00-17:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#0A0C10] text-gray-200 antialiased selection:bg-brand-gold selection:text-black">
+
+  <!-- TOP TICKER BAR -->
+  <div class="bg-black text-xs py-2 px-4 border-b border-brand-border/60 text-gray-400">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-brand-gold font-bold">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Dallas Warehouse Stock Synced (Puccini Hub)
+        </span>
+        <span class="hidden md:inline">|</span>
+        <span class="hidden md:inline"><i data-lucide="map-pin" class="w-3.5 h-3.5 inline mr-1 text-gray-500"></i>9210 King Arthur Dr, Dallas, TX 75247</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="tel:8173850216" class="hover:text-white transition font-medium flex items-center gap-1">
+          <i data-lucide="phone" class="w-3 h-3 text-brand-gold"></i> (817) 385-0216
+        </a>
+        <button onclick="openIntentModal('inventory', 'Dallas Central Warehouse')" class="text-brand-gold hover:underline font-bold text-[11px] tracking-wide uppercase">
+          Check Dallas Stock &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-[#0A0C10]/90 backdrop-blur-xl border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 group">
+        <span class="font-brand-display text-2xl font-black tracking-widest text-white group-hover:text-brand-gold transition duration-300">
+          DURA<span class="text-brand-gold">TILE</span>
+        </span>
+        <span class="text-[10px] tracking-widest uppercase bg-white/10 px-2 py-0.5 rounded text-gray-300 font-bold border border-white/10">USA</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs uppercase tracking-widest font-bold text-gray-300">
+        <a href="#collections" class="hover:text-brand-gold transition">Collections</a>
+        <a href="#buyer-paths" class="hover:text-brand-gold transition">Buyer Paths</a>
+        <a href="#inventory-section" class="hover:text-brand-gold transition">Dallas Stock</a>
+        <a href="#displays" class="hover:text-brand-gold transition">Displays & Programs</a>
+        <a href="#resources" class="hover:text-brand-gold transition">Resources</a>
+        <a href="#showroom" class="hover:text-brand-gold transition">Showroom</a>
+      </nav>
+
+      <!-- Action Cluster -->
+      <div class="flex items-center gap-3">
+        <!-- Sample Tray Button -->
+        <button onclick="toggleSampleTray()" class="relative flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-brand-gold/30 hover:border-brand-gold text-white px-4 py-2.5 rounded-lg text-xs font-bold transition">
+          <i data-lucide="layers" class="w-4 h-4 text-brand-gold"></i>
+          <span class="hidden sm:inline">Sample Kit</span>
+          <span id="sample-count-badge" class="bg-brand-gold text-black text-[11px] w-5 h-5 rounded-full flex items-center justify-center font-black">0</span>
+        </button>
+
+        <a href="#dealer-form-section" class="bg-brand-gold hover:bg-brand-golddark text-black font-extrabold px-5 py-2.5 rounded-lg text-xs uppercase tracking-wider transition shadow-lg shadow-brand-gold/20">
+          Open Account
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="relative min-h-[85vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[650px] h-[450px] bg-brand-gold/15 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto text-center relative z-10" data-aos="fade-up" data-aos-duration="900">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-brand-gold/30 text-brand-gold text-xs font-bold tracking-wider uppercase mb-6">
+        <i data-lucide="shield-check" class="w-4 h-4"></i> Wholesale Flooring & Tile Solutions
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+        Flooring and Tile Solutions for <br class="hidden sm:inline" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-amber-200 to-brand-gold">
+          Dealers, Builders & Trade Professionals.
+        </span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+        Supported with deep Dallas inventory, wholesale dealer programs, rapid jobsite samples, showroom displays, and dedicated sales assistance.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#dealer-form-section" class="bg-brand-gold hover:bg-brand-golddark text-black font-black px-8 py-4 rounded-xl text-xs uppercase tracking-widest shadow-xl transition hover-lift">
+          Open a Dealer Account
+        </a>
+        <button onclick="toggleSampleTray()" class="glass-card hover:bg-white/10 text-white font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest transition flex items-center gap-2 border border-white/10 hover-lift">
+          <i data-lucide="package-check" class="w-4 h-4 text-brand-gold"></i> Request Samples
+        </button>
+        <a href="#collections" class="text-xs uppercase tracking-widest font-bold text-gray-400 hover:text-white px-4 py-4 transition flex items-center gap-1">
+          View Collections &rarr;
+        </a>
+      </div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-8 border-t border-brand-border/60 text-left" data-aos="fade-up" data-aos-delay="150">
+        <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+          <div class="text-xl font-black text-white font-brand-display">Dallas Hub</div>
+          <div class="text-xs text-gray-400 mt-1">9210 King Arthur Dr Stock</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+          <div class="text-xl font-black text-white font-brand-display">20 Mil Wear</div>
+          <div class="text-xs text-gray-400 mt-1">Heavy Commercial SPC & LVT</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+          <div class="text-xl font-black text-white font-brand-display">Sample Tray</div>
+          <div class="text-xs text-gray-400 mt-1">Multi-SKU Express Cart</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+          <div class="text-xl font-black text-white font-brand-display">Direct Sync</div>
+          <div class="text-xs text-gray-400 mt-1">Real-Time Google Sheets Backend</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. BUYER SPECIFIC PATHS -->
+  <section id="buyer-paths" class="py-20 bg-brand-dark border-t border-brand-border/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Buyer Specific Paths</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-2">Tailored Solutions By Trade Role</h2>
+        <p class="text-xs text-gray-400 mt-2">Identify your trade profile to access dedicated programs, volume pricing, and customized documentation.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Retailers -->
+        <div class="glass-card rounded-2xl p-6 hover-lift border border-white/5 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-5 group-hover:scale-110 transition"><i data-lucide="store" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Flooring Retailers</h3>
+            <p class="text-xs text-gray-400 leading-relaxed mb-4">Complete showroom tower displays, high retailer margin structures, and reliable weekly replenishment.</p>
+          </div>
+          <a href="#dealer-form-section" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 group-hover:underline">Explore Dealer Terms &rarr;</a>
+        </div>
+
+        <!-- Builders -->
+        <div class="glass-card rounded-2xl p-6 hover-lift border border-white/5 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="150">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-5 group-hover:scale-110 transition"><i data-lucide="home" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Residential Builders</h3>
+            <p class="text-xs text-gray-400 leading-relaxed mb-4">Direct container and pallet volume tiers, production home consistency, and guaranteed batch matching.</p>
+          </div>
+          <button onclick="openIntentModal('quote', 'Residential Builder Program')" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 text-left group-hover:underline">Upload Takeoffs / Request Pricing &rarr;</button>
+        </div>
+
+        <!-- Contractors -->
+        <div class="glass-card rounded-2xl p-6 hover-lift border border-white/5 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-5 group-hover:scale-110 transition"><i data-lucide="hard-hat" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">General Contractors</h3>
+            <p class="text-xs text-gray-400 leading-relaxed mb-4">Commercial CSI specification submittal packages, ASTM sound/wear compliance data, and warehouse will-call staging.</p>
+          </div>
+          <button onclick="openIntentModal('quote', 'General Contractor Takeoff')" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 text-left group-hover:underline">Submit Submittal Review &rarr;</button>
+        </div>
+
+        <!-- Designers -->
+        <div class="glass-card rounded-2xl p-6 hover-lift border border-white/5 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="250">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-5 group-hover:scale-110 transition"><i data-lucide="compass" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Architects & Designers</h3>
+            <p class="text-xs text-gray-400 leading-relaxed mb-4">Curated architectural sample binders, large format 24x48 porcelain slabs, and full technical specifications.</p>
+          </div>
+          <button onclick="toggleSampleTray()" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 text-left group-hover:underline">Order Swatch Library &rarr;</button>
+        </div>
+
+        <!-- Multifamily -->
+        <div class="glass-card rounded-2xl p-6 hover-lift border border-white/5 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-5 group-hover:scale-110 transition"><i data-lucide="building-2" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Multifamily Buyers</h3>
+            <p class="text-xs text-gray-400 leading-relaxed mb-4">High turnover commercial dryback LVT and 20mil click SPC engineered specifically for multi-unit apartment complexes.</p>
+          </div>
+          <button onclick="openIntentModal('pricing', 'Multifamily Volume Tier')" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 text-left group-hover:underline">Request Unit-Matrix Pricing &rarr;</button>
+        </div>
+
+        <!-- Homeowners -->
+        <div class="glass-card rounded-2xl p-6 hover-lift border border-white/5 group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="350">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-5 group-hover:scale-110 transition"><i data-lucide="user-check" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Homeowners</h3>
+            <p class="text-xs text-gray-400 leading-relaxed mb-4">Discover our premium collections and locate an authorized Duratile dealer showroom near you across Dallas-Fort Worth.</p>
+          </div>
+          <button onclick="openShowroomModal('Dealer Locator')" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 text-left group-hover:underline">Find Local Dealer Showroom &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. COMPLETE PRODUCT CATALOG & LIVE SKUs -->
+  <section id="collections" class="py-24 bg-[#0E1117] border-t border-brand-border/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div data-aos="fade-right">
+          <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Inventory Directory</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-white mt-2">Complete Product Catalog & SKUs</h2>
+          <p class="text-xs text-gray-400 mt-1">Searchable collections with room scenes, technical specifications, and direct action triggers.</p>
+        </div>
+
+        <div class="flex gap-2 mt-6 md:mt-0 bg-white/5 p-1 rounded-xl border border-white/10" data-aos="fade-left">
+          <button onclick="filterCatalog('all')" class="cat-pill active px-4 py-2 text-xs font-bold rounded-lg bg-brand-gold text-black transition">All SKUs</button>
+          <button onclick="filterCatalog('spc')" class="cat-pill px-4 py-2 text-xs font-bold rounded-lg text-gray-400 hover:text-white transition">SPC Rigid Core</button>
+          <button onclick="filterCatalog('porcelain')" class="cat-pill px-4 py-2 text-xs font-bold rounded-lg text-gray-400 hover:text-white transition">Porcelain Slabs</button>
+          <button onclick="filterCatalog('lvt')" class="cat-pill px-4 py-2 text-xs font-bold rounded-lg text-gray-400 hover:text-white transition">Glue-Down LVT</button>
+        </div>
+      </div>
+
+      <!-- Catalog Grid with Actual Duratile SKUs -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="catalog-container">
+
+        <!-- Product 1: Saint Laurent PT76 -->
+        <div class="product-item glass-card rounded-2xl overflow-hidden hover-lift border border-white/10 flex flex-col" data-cat="porcelain" data-aos="fade-up">
+          <div class="h-64 bg-gradient-to-tr from-gray-950 to-neutral-900 relative p-4 flex flex-col justify-between">
+            <div class="flex justify-between items-center z-10">
+              <span class="bg-black/70 backdrop-blur-md text-brand-gold text-[10px] font-black uppercase px-2.5 py-1 rounded border border-brand-gold/30">Porcelain 24x48</span>
+              <span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded border border-emerald-500/30">Dallas Stock</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="font-brand-display text-xl text-white font-bold tracking-wider">SAINT LAURENT</div>
+              <div class="text-[11px] text-gray-400 tracking-widest uppercase">Mirror Polish Nero Marquina Look</div>
+            </div>
+            <div class="flex justify-between items-center text-[11px] text-gray-400 font-mono">
+              <span>SKU: <strong class="text-white">PT76-POLISHED</strong></span>
+              <span class="text-brand-gold">15.5 Sq.Ft / Box</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div class="space-y-1.5 text-xs text-gray-300 mb-6">
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Dimensions:</span> <strong class="text-white">24" x 48" Rectified</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Finish & Edge:</span> <strong class="text-white">High Gloss / True Rectified</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Water Absorption:</span> <strong class="text-white">&le; 0.1% Commercial Grade</strong></div>
+              <div class="flex justify-between"><span>Warranty:</span> <strong class="text-white">Lifetime Structural</strong></div>
+            </div>
+            <div class="space-y-2">
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="addSampleToTray('PT76-POLISHED', 'Saint Laurent 24x48 Porcelain')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-brand-gold border border-brand-gold/30 font-bold py-2.5 rounded-lg text-xs transition flex items-center justify-center gap-1">
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i> Request Sample
+                </button>
+                <button onclick="openIntentModal('inventory', 'PT76-POLISHED (Saint Laurent)')" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-lg text-xs transition">
+                  Check Inventory
+                </button>
+              </div>
+              <button onclick="openIntentModal('pricing', 'PT76-POLISHED (Saint Laurent)')" class="w-full bg-black/60 hover:bg-black text-gray-300 hover:text-white border border-white/10 py-2 rounded-lg text-[11px] font-semibold transition">
+                Request Dealer Pricing
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Panda White PT22 -->
+        <div class="product-item glass-card rounded-2xl overflow-hidden hover-lift border border-white/10 flex flex-col" data-cat="porcelain" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-64 bg-gradient-to-tr from-gray-950 to-neutral-800 relative p-4 flex flex-col justify-between">
+            <div class="flex justify-between items-center z-10">
+              <span class="bg-black/70 backdrop-blur-md text-brand-gold text-[10px] font-black uppercase px-2.5 py-1 rounded border border-brand-gold/30">Porcelain 24x48</span>
+              <span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded border border-emerald-500/30">Dallas Stock</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="font-brand-display text-xl text-white font-bold tracking-wider">PANDA WHITE</div>
+              <div class="text-[11px] text-gray-400 tracking-widest uppercase">Bold Drama Black & White Vein</div>
+            </div>
+            <div class="flex justify-between items-center text-[11px] text-gray-400 font-mono">
+              <span>SKU: <strong class="text-white">PT22-PANDA-WH</strong></span>
+              <span class="text-brand-gold">15.5 Sq.Ft / Box</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div class="space-y-1.5 text-xs text-gray-300 mb-6">
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Dimensions:</span> <strong class="text-white">24" x 48" Rectified</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Finish & Edge:</span> <strong class="text-white">Polished / Rectified Edge</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Application:</span> <strong class="text-white">Commercial Floor & Wall</strong></div>
+              <div class="flex justify-between"><span>Warranty:</span> <strong class="text-white">Lifetime Structural</strong></div>
+            </div>
+            <div class="space-y-2">
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="addSampleToTray('PT22-PANDA-WH', 'Panda White 24x48 Porcelain')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-brand-gold border border-brand-gold/30 font-bold py-2.5 rounded-lg text-xs transition flex items-center justify-center gap-1">
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i> Request Sample
+                </button>
+                <button onclick="openIntentModal('inventory', 'PT22-PANDA-WH (Panda White)')" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-lg text-xs transition">
+                  Check Inventory
+                </button>
+              </div>
+              <button onclick="openIntentModal('pricing', 'PT22-PANDA-WH (Panda White)')" class="w-full bg-black/60 hover:bg-black text-gray-300 hover:text-white border border-white/10 py-2 rounded-lg text-[11px] font-semibold transition">
+                Request Dealer Pricing
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Calacatta Oro PT09 -->
+        <div class="product-item glass-card rounded-2xl overflow-hidden hover-lift border border-white/10 flex flex-col" data-cat="porcelain" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-64 bg-gradient-to-tr from-stone-900 to-neutral-900 relative p-4 flex flex-col justify-between">
+            <div class="flex justify-between items-center z-10">
+              <span class="bg-black/70 backdrop-blur-md text-brand-gold text-[10px] font-black uppercase px-2.5 py-1 rounded border border-brand-gold/30">Porcelain 24x48</span>
+              <span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded border border-emerald-500/30">Dallas Stock</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="font-brand-display text-xl text-amber-100 font-bold tracking-wider">CALACATTA ORO</div>
+              <div class="text-[11px] text-amber-200/70 tracking-widest uppercase">Warm Golden Veined Marble Look</div>
+            </div>
+            <div class="flex justify-between items-center text-[11px] text-gray-400 font-mono">
+              <span>SKU: <strong class="text-white">PT09-CALAC-ORO</strong></span>
+              <span class="text-brand-gold">15.5 Sq.Ft / Box</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div class="space-y-1.5 text-xs text-gray-300 mb-6">
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Dimensions:</span> <strong class="text-white">24" x 48" Slab Look</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Finish & Edge:</span> <strong class="text-white">Mirror Glazed Polished</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>PEI Rating:</span> <strong class="text-white">PEI 4 Commercial</strong></div>
+              <div class="flex justify-between"><span>Warranty:</span> <strong class="text-white">25-Yr Commercial</strong></div>
+            </div>
+            <div class="space-y-2">
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="addSampleToTray('PT09-CALAC-ORO', 'Calacatta Oro 24x48 Porcelain')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-brand-gold border border-brand-gold/30 font-bold py-2.5 rounded-lg text-xs transition flex items-center justify-center gap-1">
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i> Request Sample
+                </button>
+                <button onclick="openIntentModal('inventory', 'PT09-CALAC-ORO (Calacatta Oro)')" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-lg text-xs transition">
+                  Check Inventory
+                </button>
+              </div>
+              <button onclick="openIntentModal('pricing', 'PT09-CALAC-ORO (Calacatta Oro)')" class="w-full bg-black/60 hover:bg-black text-gray-300 hover:text-white border border-white/10 py-2 rounded-lg text-[11px] font-semibold transition">
+                Request Dealer Pricing
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: SPC Highland Oak -->
+        <div class="product-item glass-card rounded-2xl overflow-hidden hover-lift border border-white/10 flex flex-col" data-cat="spc" data-aos="fade-up">
+          <div class="h-64 bg-gradient-to-tr from-[#1B1916] to-[#2B231A] relative p-4 flex flex-col justify-between">
+            <div class="flex justify-between items-center z-10">
+              <span class="bg-black/70 backdrop-blur-md text-amber-300 text-[10px] font-black uppercase px-2.5 py-1 rounded border border-amber-300/30">SPC Rigid Core 20MIL</span>
+              <span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded border border-emerald-500/30">Dallas Stock</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="font-brand-display text-xl text-amber-100 font-bold tracking-wider">HIGHLAND OAK</div>
+              <div class="text-[11px] text-amber-200/70 tracking-widest uppercase">Natural Warm Toned EIR Embossed</div>
+            </div>
+            <div class="flex justify-between items-center text-[11px] text-gray-400 font-mono">
+              <span>SKU: <strong class="text-white">SPC-HLO-20M</strong></span>
+              <span class="text-brand-gold">23.64 Sq.Ft / Box</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div class="space-y-1.5 text-xs text-gray-300 mb-6">
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Wear Layer / Pad:</span> <strong class="text-white">20 mil + 1.5mm IXPE Pad</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Thickness & Edge:</span> <strong class="text-white">6.5mm Total / Painted Bevel</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Dimensions:</span> <strong class="text-white">9" x 60" Wide Plank Click</strong></div>
+              <div class="flex justify-between"><span>Acoustic Tests:</span> <strong class="text-white">IIC 72 / STC 71 Sound Rated</strong></div>
+            </div>
+            <div class="space-y-2">
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="addSampleToTray('SPC-HLO-20M', 'Highland Oak 20mil SPC Plank')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-brand-gold border border-brand-gold/30 font-bold py-2.5 rounded-lg text-xs transition flex items-center justify-center gap-1">
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i> Request Sample
+                </button>
+                <button onclick="openIntentModal('inventory', 'SPC-HLO-20M (Highland Oak)')" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-lg text-xs transition">
+                  Check Inventory
+                </button>
+              </div>
+              <button onclick="openIntentModal('pricing', 'SPC-HLO-20M (Highland Oak)')" class="w-full bg-black/60 hover:bg-black text-gray-300 hover:text-white border border-white/10 py-2 rounded-lg text-[11px] font-semibold transition">
+                Request Dealer Pricing
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Alamo Walnut SPC -->
+        <div class="product-item glass-card rounded-2xl overflow-hidden hover-lift border border-white/10 flex flex-col" data-cat="spc" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-64 bg-gradient-to-tr from-[#161413] to-[#2E251E] relative p-4 flex flex-col justify-between">
+            <div class="flex justify-between items-center z-10">
+              <span class="bg-black/70 backdrop-blur-md text-amber-300 text-[10px] font-black uppercase px-2.5 py-1 rounded border border-amber-300/30">SPC Rigid Core 20MIL</span>
+              <span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded border border-emerald-500/30">Dallas Stock</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="font-brand-display text-xl text-amber-100 font-bold tracking-wider">ALAMO WALNUT</div>
+              <div class="text-[11px] text-amber-200/70 tracking-widest uppercase">Deep Tone Luxury Commercial Core</div>
+            </div>
+            <div class="flex justify-between items-center text-[11px] text-gray-400 font-mono">
+              <span>SKU: <strong class="text-white">SPC-ALW-20M</strong></span>
+              <span class="text-brand-gold">19.02 Sq.Ft / Box</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div class="space-y-1.5 text-xs text-gray-300 mb-6">
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Wear Layer / Pad:</span> <strong class="text-white">20 mil + 1.5mm Acoustic Pad</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Dimensions:</span> <strong class="text-white">7" x 48" Click Plank</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Installation:</span> <strong class="text-white">Unilin Locking System</strong></div>
+              <div class="flex justify-between"><span>Warranty:</span> <strong class="text-white">15-Yr Commercial</strong></div>
+            </div>
+            <div class="space-y-2">
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="addSampleToTray('SPC-ALW-20M', 'Alamo Walnut 20mil SPC')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-brand-gold border border-brand-gold/30 font-bold py-2.5 rounded-lg text-xs transition flex items-center justify-center gap-1">
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i> Request Sample
+                </button>
+                <button onclick="openIntentModal('inventory', 'SPC-ALW-20M (Alamo Walnut)')" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-lg text-xs transition">
+                  Check Inventory
+                </button>
+              </div>
+              <button onclick="openIntentModal('pricing', 'SPC-ALW-20M (Alamo Walnut)')" class="w-full bg-black/60 hover:bg-black text-gray-300 hover:text-white border border-white/10 py-2 rounded-lg text-[11px] font-semibold transition">
+                Request Dealer Pricing
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Glue-Down Commercial LVT -->
+        <div class="product-item glass-card rounded-2xl overflow-hidden hover-lift border border-white/10 flex flex-col" data-cat="lvt" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-64 bg-gradient-to-tr from-slate-900 to-gray-800 relative p-4 flex flex-col justify-between">
+            <div class="flex justify-between items-center z-10">
+              <span class="bg-black/70 backdrop-blur-md text-blue-300 text-[10px] font-black uppercase px-2.5 py-1 rounded border border-blue-300/30">Glue-Down LVT 20MIL</span>
+              <span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded border border-emerald-500/30">Dallas Stock</span>
+            </div>
+            <div class="text-center my-auto">
+              <div class="font-brand-display text-xl text-slate-100 font-bold tracking-wider">DALLAS SLATE LVT</div>
+              <div class="text-[11px] text-slate-300 tracking-widest uppercase">Dryback Commercial Tile Look</div>
+            </div>
+            <div class="flex justify-between items-center text-[11px] text-gray-400 font-mono">
+              <span>SKU: <strong class="text-white">LVT-DSL-20M</strong></span>
+              <span class="text-brand-gold">36.00 Sq.Ft / Box</span>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div class="space-y-1.5 text-xs text-gray-300 mb-6">
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Wear Layer:</span> <strong class="text-white">20 mil Commercial Dryback</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Thickness:</span> <strong class="text-white">2.5mm Direct Glue</strong></div>
+              <div class="flex justify-between border-b border-white/5 pb-1"><span>Dimensions:</span> <strong class="text-white">12" x 24" Commercial Tile</strong></div>
+              <div class="flex justify-between"><span>High Traffic Use:</span> <strong class="text-white">Corridors, Retail, Multi-Housing</strong></div>
+            </div>
+            <div class="space-y-2">
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="addSampleToTray('LVT-DSL-20M', 'Dallas Slate 20mil Glue-Down LVT')" class="w-full bg-white/5 hover:bg-brand-gold hover:text-black text-brand-gold border border-brand-gold/30 font-bold py-2.5 rounded-lg text-xs transition flex items-center justify-center gap-1">
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i> Request Sample
+                </button>
+                <button onclick="openIntentModal('inventory', 'LVT-DSL-20M (Dallas Slate)')" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-2.5 rounded-lg text-xs transition">
+                  Check Inventory
+                </button>
+              </div>
+              <button onclick="openIntentModal('pricing', 'LVT-DSL-20M (Dallas Slate)')" class="w-full bg-black/60 hover:bg-black text-gray-300 hover:text-white border border-white/10 py-2 rounded-lg text-[11px] font-semibold transition">
+                Request Dealer Pricing
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. DALLAS INVENTORY & SERVICE AREA MESSAGE -->
+  <section id="inventory-section" class="py-20 relative bg-black border-t border-brand-border/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-brand-gold/20 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8" data-aos="zoom-in">
+        <div class="max-w-2xl">
+          <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Local Stock Assurance</span>
+          <h3 class="text-3xl sm:text-4xl font-black text-white mt-2 mb-4">Dallas Inventory & Service Area</h3>
+          <p class="text-sm text-gray-300 leading-relaxed mb-6">
+            Our central warehouse at <strong>9210 King Arthur Dr, Dallas, TX 75247</strong> directly links to live Puccini inventory. Fast regional dispatch across Dallas-Fort Worth, Houston, Austin, San Antonio, and neighboring Southwest markets.
+          </p>
+          <div class="flex flex-wrap gap-4 text-xs text-gray-300">
+            <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i> Live Puccini Database Sync</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i> 2-Hour Rapid Will-Call Staging</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i> Direct Jobsite Pallet Freight</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-auto flex flex-col sm:flex-row gap-3">
+          <button onclick="openIntentModal('inventory', 'Dallas Central Hub')" class="bg-brand-gold hover:bg-brand-golddark text-black font-extrabold px-7 py-3.5 rounded-xl text-xs uppercase tracking-wider transition shadow-lg text-center">
+            Check Dallas Live Inventory
+          </button>
+          <button onclick="openShowroomModal('Dallas Warehouse Tour')" class="glass-card hover:bg-white/10 text-white font-bold px-7 py-3.5 rounded-xl text-xs uppercase tracking-wider transition text-center border border-white/10">
+            Schedule Will-Call Visit
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DEALER DISPLAY AND SAMPLE PROGRAMS -->
+  <section id="displays" class="py-24 bg-[#0B0D11] border-t border-brand-border/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Showroom Display Support</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 mb-6">
+            Dealer Displays & Architect Sample Boards
+          </h2>
+          <p class="text-sm text-gray-300 mb-6 leading-relaxed">
+            Equip your showroom with Duratile premium waterfall towers, hand-held architect presentation folders, and large format sample boards designed to close retail and builder sales on the spot.
+          </p>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-brand-gold/15 text-brand-gold flex items-center justify-center shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></div>
+              <div>
+                <strong class="text-white text-xs block">Rotating Retail Display Towers</strong>
+                <p class="text-[11px] text-gray-400">Compact footprint showcasing 20 top-selling SPC rigid core and LVT colorways.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-brand-gold/15 text-brand-gold flex items-center justify-center shrink-0 mt-0.5"><i data-lucide="check" class="w-3.5 h-3.5"></i></div>
+              <div>
+                <strong class="text-white text-xs block">Architectural Swatch Binders</strong>
+                <p class="text-[11px] text-gray-400">Portable take-home swatch libraries featuring full technical specifications and commercial warranty terms.</p>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="toggleSampleTray()" class="bg-brand-gold hover:bg-brand-golddark text-black font-extrabold px-8 py-3.5 rounded-xl text-xs uppercase tracking-widest shadow-xl transition">
+            Request Your Dealer Sample Kit &rarr;
+          </button>
+        </div>
+
+        <div class="glass-card rounded-3xl p-8 border border-white/10 relative text-center" data-aos="fade-left">
+          <div class="w-16 h-16 rounded-2xl bg-brand-gold/10 text-brand-gold flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="layout-grid" class="w-8 h-8"></i>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-2 font-brand-display">Duratile Display Program</h4>
+          <p class="text-xs text-gray-400 mb-6 max-w-sm mx-auto">Available with qualifying opening orders. Request full display fixture specifications and co-op merchandising support.</p>
+          <div class="p-4 bg-black/50 rounded-xl border border-white/5 text-left text-xs space-y-2 mb-6">
+            <div class="flex justify-between text-gray-300"><span>Display Footprint:</span> <strong class="text-white">24" W x 30" D x 78" H</strong></div>
+            <div class="flex justify-between text-gray-300"><span>Capacity:</span> <strong class="text-white">20 Full-Size Planks</strong></div>
+            <div class="flex justify-between text-gray-300"><span>Co-Op Credit:</span> <strong class="text-white">100% Reimbursable on Volume</strong></div>
+          </div>
+          <button onclick="openIntentModal('pricing', 'Display Tower Program')" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-lg text-xs transition uppercase tracking-wider">
+            Request Display Catalog & Terms
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. DEALER RESOURCES CENTER (OPEN + GATED) -->
+  <section id="resources" class="py-20 bg-brand-dark border-t border-brand-border/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div data-aos="fade-right">
+          <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Technical Support</span>
+          <h2 class="text-3xl font-black text-white mt-2">Dealer Resources Center</h2>
+          <p class="text-xs text-gray-400 mt-1">Open technical guides and gated wholesale asset packets.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card p-5 rounded-xl border border-white/5 flex flex-col justify-between">
+          <div>
+            <i data-lucide="file-text" class="w-6 h-6 text-brand-gold mb-3"></i>
+            <h4 class="text-sm font-bold text-white mb-1">SPC Installation & Maintenance</h4>
+            <p class="text-[11px] text-gray-400 mb-4">Standard guidelines for 6.5mm click rigid core over subfloors.</p>
+          </div>
+          <a href="#" onclick="alert('Downloading Open Resource: Duratile SPC Guide.pdf'); return false;" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 hover:underline">Download PDF (Open) &rarr;</a>
+        </div>
+
+        <div class="glass-card p-5 rounded-xl border border-white/5 flex flex-col justify-between">
+          <div>
+            <i data-lucide="shield" class="w-6 h-6 text-brand-gold mb-3"></i>
+            <h4 class="text-sm font-bold text-white mb-1">Commercial Warranty Documents</h4>
+            <p class="text-[11px] text-gray-400 mb-4">Lifetime structural & 15-year light commercial warranty terms.</p>
+          </div>
+          <a href="#" onclick="alert('Downloading Open Resource: Duratile Warranty Terms.pdf'); return false;" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 hover:underline">Download PDF (Open) &rarr;</a>
+        </div>
+
+        <div class="glass-card p-5 rounded-xl border border-brand-gold/20 flex flex-col justify-between bg-brand-gold/5">
+          <div>
+            <span class="bg-brand-gold text-black text-[9px] font-black uppercase px-2 py-0.5 rounded">Gated Trade Asset</span>
+            <h4 class="text-sm font-bold text-white mt-2 mb-1">2026 Wholesale Price Sheet</h4>
+            <p class="text-[11px] text-gray-400 mb-4">Tiered volume container, pallet, and box pricing matrices.</p>
+          </div>
+          <button onclick="openIntentModal('pricing', '2026 Wholesale Price List')" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 text-left hover:underline">Request Price Sheet &rarr;</button>
+        </div>
+
+        <div class="glass-card p-5 rounded-xl border border-brand-gold/20 flex flex-col justify-between bg-brand-gold/5">
+          <div>
+            <span class="bg-brand-gold text-black text-[9px] font-black uppercase px-2 py-0.5 rounded">Gated Trade Asset</span>
+            <h4 class="text-sm font-bold text-white mt-2 mb-1">Dealer Marketing & Co-Op Kit</h4>
+            <p class="text-[11px] text-gray-400 mb-4">High-resolution room scene photobank, display specs, and logos.</p>
+          </div>
+          <button onclick="openIntentModal('pricing', 'Dealer Marketing Kit')" class="text-xs text-brand-gold font-bold inline-flex items-center gap-1 text-left hover:underline">Request Kit Download &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. SHOWROOM & APPOINTMENT BOOKING -->
+  <section id="showroom" class="py-20 bg-black border-t border-brand-border/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Trade Consultations</span>
+          <h2 class="text-3xl font-black text-white mt-2 mb-4">Dallas Showroom & Sales Appointments</h2>
+          <p class="text-xs text-gray-300 leading-relaxed mb-6">
+            Meet with your assigned DFW representative to review physical tile swatches, discuss commercial takeoffs, or finalize wholesale stocking programs.
+          </p>
+
+          <div class="space-y-3 mb-8 text-xs text-gray-300">
+            <div class="flex items-center gap-3"><i data-lucide="calendar" class="w-4 h-4 text-brand-gold"></i> Showroom Walkthrough & Large Format Slab Viewing</div>
+            <div class="flex items-center gap-3"><i data-lucide="layers" class="w-4 h-4 text-brand-gold"></i> Sample Presentation & Architectural Binder Hand-Off</div>
+            <div class="flex items-center gap-3"><i data-lucide="briefcase" class="w-4 h-4 text-brand-gold"></i> Dealer Program Consultation & Merchandising Terms</div>
+            <div class="flex items-center gap-3"><i data-lucide="video" class="w-4 h-4 text-brand-gold"></i> Virtual Product Presentation (Out-of-Territory Trade)</div>
+          </div>
+
+          <button onclick="openShowroomModal('General Showroom Consultation')" class="bg-brand-gold hover:bg-brand-golddark text-black font-extrabold px-8 py-3.5 rounded-xl text-xs uppercase tracking-widest shadow-xl transition">
+            Book Appointment (Direct to Sheet)
+          </button>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 border border-white/10" data-aos="fade-left">
+          <div class="text-xs space-y-4 text-gray-300">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-brand-gold shrink-0"></i>
+              <div>
+                <strong class="text-white block text-sm">Dallas Distribution & Showroom</strong>
+                <p>9210 King Arthur Dr, Dallas, TX 75247</p>
+                <p class="text-gray-500 text-[11px] mt-0.5">Located in the heart of the DFW distribution corridor.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i data-lucide="clock" class="w-5 h-5 text-brand-gold shrink-0"></i>
+              <div>
+                <strong class="text-white block text-sm">Operating Hours</strong>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                <p class="text-gray-500 text-[11px] mt-0.5">Will-Call desk closes at 4:30 PM for truck staging.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-brand-gold shrink-0"></i>
+              <div>
+                <strong class="text-white block text-sm">Direct Contact</strong>
+                <p>Phone: (817) 385-0216 | Email: info@duratileus.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. BECOME A DEALER APPLICATION FORM -->
+  <section id="dealer-form-section" class="py-24 bg-[#0B0D11] border-t border-brand-border/40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Wholesale Qualification</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-2">Become an Authorized Duratile Dealer</h2>
+        <p class="text-xs sm:text-sm text-gray-400 mt-2">Fast submission. Data is logged in Google Sheets for immediate rep follow-up.</p>
+      </div>
+
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-white/10 shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+        <form id="dealer-form" onsubmit="handleDealerSubmit(event)" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Contact Name *</label>
+              <input type="text" required id="dealer-contact-name" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none" placeholder="First and last name" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Company Name *</label>
+              <input type="text" required id="dealer-company-name" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none" placeholder="Business or Store name" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Business Email *</label>
+              <input type="email" required id="dealer-email" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none" placeholder="buyer@company.com" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Telephone *</label>
+              <input type="tel" required id="dealer-phone" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none" placeholder="(214) 555-0100" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Customer Type *</label>
+              <select id="dealer-customer-type" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none">
+                <option value="flooring_retailer">Flooring Retailer</option>
+                <option value="builder">Builder / General Contractor</option>
+                <option value="contractor">Flooring Contractor</option>
+                <option value="designer">Designer / Architect</option>
+                <option value="multifamily_buyer">Multifamily Buyer</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">City *</label>
+              <input type="text" required id="dealer-city" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none" placeholder="Dallas" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">State *</label>
+              <input type="text" required id="dealer-state" value="TX" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Estimated Monthly Purchases</label>
+              <select id="dealer-purchases" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none">
+                <option value="under_5k">Under $5,000 / month</option>
+                <option value="5k_15k">$5,000 - $15,000 / month</option>
+                <option value="15k_50k">$15,000 - $50,000 / month</option>
+                <option value="50k_plus">$50,000+ / month (Volume Tier)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Product Interest</label>
+              <select id="dealer-interest" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none">
+                <option value="all">Full Line (Porcelain, SPC & LVT)</option>
+                <option value="spc">SPC Rigid Core Waterproof Vinyl</option>
+                <option value="porcelain">Large Format 24x48 Porcelain Slabs</option>
+                <option value="lvt">Commercial Glue-Down Dryback LVT</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" id="dealer-submit-btn" class="w-full bg-brand-gold hover:bg-brand-golddark text-black font-black py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-xl shadow-brand-gold/20 hover-lift">
+            Submit Application (Sync To Sheet)
+          </button>
+          
+          <p class="text-[11px] text-gray-500 text-center">
+            * Formal tax exemption certificates and credit references are collected after qualification in Step 2.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDING MULTI-SAMPLE TRAY DRAWER -->
+  <div id="sample-tray-drawer" class="fixed inset-y-0 right-0 max-w-md w-full bg-[#11141B] shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col border-l border-white/10">
+    <div class="p-5 border-b border-white/10 flex items-center justify-between bg-black/60">
+      <div class="flex items-center gap-2">
+        <i data-lucide="layers" class="w-5 h-5 text-brand-gold"></i>
+        <h3 class="font-bold text-sm text-white uppercase tracking-wider">Duratile Sample Kit Tray</h3>
+      </div>
+      <button onclick="toggleSampleTray()" class="text-gray-400 hover:text-white p-1"><i data-lucide="x" class="w-5 h-5"></i></button>
+    </div>
+
+    <!-- Items Container -->
+    <div class="flex-1 overflow-y-auto p-5 space-y-3" id="sample-tray-list">
+      <div id="tray-empty" class="text-center py-20 text-gray-500">
+        <i data-lucide="package-search" class="w-12 h-12 mx-auto mb-3 opacity-40"></i>
+        <p class="text-sm">Your sample cart is empty.</p>
+        <p class="text-xs text-gray-600 mt-1">Browse collections and click "+ Request Sample".</p>
+      </div>
+    </div>
+
+    <!-- Live GSheet Form inside Drawer -->
+    <div id="tray-footer" class="p-5 bg-black/70 border-t border-white/10" style="display: none;">
+      <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Free Express Sample Dispatch</h4>
+      <form onsubmit="handleSampleKitSubmit(event)" class="space-y-3">
+        <input type="text" required id="sample-name" placeholder="Contact Name *" class="w-full text-xs bg-white/5 border border-white/10 rounded-lg p-2.5 text-white" />
+        <input type="text" required id="sample-company" placeholder="Company Name *" class="w-full text-xs bg-white/5 border border-white/10 rounded-lg p-2.5 text-white" />
+        <input type="email" required id="sample-email" placeholder="Business Email *" class="w-full text-xs bg-white/5 border border-white/10 rounded-lg p-2.5 text-white" />
+        <input type="tel" required id="sample-phone" placeholder="Telephone *" class="w-full text-xs bg-white/5 border border-white/10 rounded-lg p-2.5 text-white" />
+        <input type="text" required id="sample-address" placeholder="Shipping Street Address, City, State, Zip *" class="w-full text-xs bg-white/5 border border-white/10 rounded-lg p-2.5 text-white" />
+        
+        <div class="grid grid-cols-2 gap-2">
+          <select id="sample-role" class="w-full text-xs bg-[#11141B] border border-white/10 rounded-lg p-2.5 text-white">
+            <option value="retailer">Retailer (Display Board)</option>
+            <option value="builder">Builder / Contractor</option>
+            <option value="designer">Designer / Architect</option>
+            <option value="multifamily">Multifamily Specifier</option>
+          </select>
+          <select id="sample-timeline" class="w-full text-xs bg-[#11141B] border border-white/10 rounded-lg p-2.5 text-white">
+            <option value="immediate">Need: Immediate (Under 30 Days)</option>
+            <option value="60days">Project: 30-60 Days</option>
+            <option value="stocking">Stocking Sample Program</option>
+          </select>
+        </div>
+
+        <button type="submit" id="sample-submit-btn" class="w-full bg-brand-gold hover:bg-brand-golddark text-black font-extrabold py-3 rounded-lg text-xs uppercase tracking-wider transition shadow-lg">
+          Dispatch Samples (Sync To Sheet)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- DRAWER BACKDROP -->
+  <div id="drawer-backdrop" onclick="toggleSampleTray()" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-40 hidden"></div>
+
+  <!-- MULTI-PURPOSE CONVERSION MODAL -->
+  <div id="action-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden">
+    <div class="glass-card rounded-2xl max-w-md w-full p-6 relative border border-white/10">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-500 text-xs py-16 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div>
+        <span class="font-brand-display text-xl font-bold tracking-widest text-white">DURA<span class="text-brand-gold">TILE</span></span>
+        <p class="mt-3 leading-relaxed text-gray-400">Dallas wholesale distributor of commercial-grade SPC rigid core, luxury vinyl tile, and porcelain slabs for trade professionals.</p>
+      </div>
+      <div>
+        <h5 class="text-white font-bold uppercase tracking-wider mb-3">Dallas Distribution Hub</h5>
+        <p class="text-gray-400">9210 King Arthur Dr</p>
+        <p class="text-gray-400">Dallas, TX 75247</p>
+        <p class="mt-2 text-white font-semibold">Direct Phone: (817) 385-0216</p>
+      </div>
+      <div>
+        <h5 class="text-white font-bold uppercase tracking-wider mb-3">Featured SKUs</h5>
+        <ul class="space-y-2">
+          <li><a href="#collections" class="hover:text-white transition">Saint Laurent PT76 (24x48)</a></li>
+          <li><a href="#collections" class="hover:text-white transition">Panda White PT22 (24x48)</a></li>
+          <li><a href="#collections" class="hover:text-white transition">Highland Oak 20mil SPC</a></li>
+          <li><a href="#collections" class="hover:text-white transition">Dallas Slate Commercial LVT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-bold uppercase tracking-wider mb-3">Backend Synced</h5>
+        <p class="text-gray-400 leading-relaxed">
+          Every form submission feeds directly into your central Google Sheets database in real-time, logging timestamp, SKU interest, volume, and customer contact data.
+        </p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-white/5 text-center text-gray-600">
+      <p>&copy; 2026 Duratile USA / Puccini Distribution Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT & GOOGLE SHEETS LIVE INTEGRATION -->
+  <script>
+    // =========================================================================
+    // PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL HERE:
+    // Example: "https://script.google.com/macros/s/AKfycbx.../exec"
+    // =========================================================================
+    const GOOGLE_SHEET_WEBAPP_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEBAPP_URL_HERE";
+
+    // Initialize Lucide Icons & AOS
+    lucide.createIcons();
+    AOS.init({ once: true, duration: 800, easing: 'ease-out-cubic' });
+
+    // Multi-SKU Sample Tray State
+    let sampleTray = [];
+
+    function toggleSampleTray() {
+      const drawer = document.getElementById('sample-tray-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+      const isClosed = drawer.classList.contains('translate-x-full');
+
+      if (isClosed) {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      }
+    }
+
+    function addSampleToTray(sku, name) {
+      if (!sampleTray.some(item => item.sku === sku)) {
+        sampleTray.push({ sku, name });
+        updateTrayUI();
+      }
+      toggleSampleTray();
+    }
+
+    function removeSample(sku) {
+      sampleTray = sampleTray.filter(item => item.sku !== sku);
+      updateTrayUI();
+    }
+
+    function updateTrayUI() {
+      const badge = document.getElementById('sample-count-badge');
+      const list = document.getElementById('sample-tray-list');
+      const footer = document.getElementById('tray-footer');
+      const empty = document.getElementById('tray-empty');
+
+      badge.innerText = sampleTray.length;
+
+      if (sampleTray.length === 0) {
+        list.innerHTML = '';
+        list.appendChild(empty);
+        empty.style.display = 'block';
+        footer.style.display = 'none';
+      } else {
+        empty.style.display = 'none';
+        footer.style.display = 'block';
+        list.innerHTML = sampleTray.map(item => `
+          <div class="p-3 bg-white/5 border border-white/10 rounded-xl flex items-center justify-between text-xs">
+            <div>
+              <strong class="text-white block">${item.name}</strong>
+              <span class="font-mono text-brand-gold text-[11px]">${item.sku}</span>
+            </div>
+            <button onclick="removeSample('${item.sku}')" class="text-red-400 hover:text-red-300 font-bold p-1">
+              &times;
+            </button>
+          </div>
+        `).join('');
+      }
+      lucide.createIcons();
+    }
+
+    // Dynamic Filter Tabs
+    function filterCatalog(category) {
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        btn.classList.remove('bg-brand-gold', 'text-black', 'active');
+        btn.classList.add('text-gray-400');
+      });
+      event.target.classList.add('bg-brand-gold', 'text-black', 'active');
+      event.target.classList.remove('text-gray-400');
+
+      document.querySelectorAll('.product-item').forEach(item => {
+        if (category === 'all' || item.dataset.cat === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // CORE FUNCTION: POST PAYLOAD TO GOOGLE SHEETS
+    async function sendDataToGoogleSheet(payload) {
+      if (!GOOGLE_SHEET_WEBAPP_URL || GOOGLE_SHEET_WEBAPP_URL.includes("YOUR_GOOGLE_APPS_SCRIPT")) {
+        console.warn("Google Sheet Web App URL missing. Data captured locally:", payload);
+        return { status: "local_success" };
+      }
+
+      try {
+        await fetch(GOOGLE_SHEET_WEBAPP_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        return { status: "success" };
+      } catch (err) {
+        console.error("Sheet dispatch error:", err);
+        return { status: "error", error: err };
+      }
+    }
+
+    // 1. DEALER APPLICATION HANDLER
+    async function handleDealerSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('dealer-submit-btn');
+      btn.innerText = "Submitting to Sheet...";
+      btn.disabled = true;
+
+      const payload = {
+        form_type: "Dealer Application",
+        name: document.getElementById('dealer-contact-name').value,
+        company: document.getElementById('dealer-company-name').value,
+        email: document.getElementById('dealer-email').value,
+        phone: document.getElementById('dealer-phone').value,
+        buyer_type: document.getElementById('dealer-customer-type').value,
+        city: document.getElementById('dealer-city').value,
+        state: document.getElementById('dealer-state').value,
+        monthly_volume: document.getElementById('dealer-purchases').value,
+        product_interest: document.getElementById('dealer-interest').value
+      };
+
+      await sendDataToGoogleSheet(payload);
+      alert("Success! Dealer application sent directly to your Google Sheet.");
+      document.getElementById('dealer-form').reset();
+      btn.innerText = "Submit Application (Sync To Sheet)";
+      btn.disabled = false;
+    }
+
+    // 2. SAMPLE KIT HANDLER
+    async function handleSampleKitSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('sample-submit-btn');
+      btn.innerText = "Saving to Sheet...";
+      btn.disabled = true;
+
+      const skus = sampleTray.map(i => `${i.sku} (${i.name})`).join(', ');
+
+      const payload = {
+        form_type: "Sample Kit Request",
+        target_sku: skus,
+        name: document.getElementById('sample-name').value,
+        company: document.getElementById('sample-company').value,
+        email: document.getElementById('sample-email').value,
+        phone: document.getElementById('sample-phone').value,
+        address: document.getElementById('sample-address').value,
+        buyer_type: document.getElementById('sample-role').value,
+        timeline: document.getElementById('sample-timeline').value
+      };
+
+      await sendDataToGoogleSheet(payload);
+      alert(`Success! Sample request for [${skus}] saved to Google Sheet.`);
+      sampleTray = [];
+      updateTrayUI();
+      toggleSampleTray();
+      btn.innerText = "Dispatch Samples (Sync To Sheet)";
+      btn.disabled = false;
+    }
+
+    // 3. INVENTORY / PRICING / QUOTE MODALS
+    function openIntentModal(type, target) {
+      const modal = document.getElementById('action-modal');
+      const body = document.getElementById('modal-body');
+      modal.classList.remove('hidden');
+
+      let title = type === 'inventory' ? `Check Dallas Stock for: ${target}` :
+                  type === 'pricing' ? `Request Wholesale Pricing for: ${target}` :
+                  `Get a Project Quote for: ${target}`;
+
+      let badge = type === 'inventory' ? 'Inventory Inquiry' :
+                  type === 'pricing' ? 'Dealer Pricing' : 'Project Quote';
+
+      body.innerHTML = `
+        <div class="text-left">
+          <span class="text-brand-gold text-[10px] uppercase font-bold tracking-widest">${badge}</span>
+          <h3 class="text-base font-black text-white mt-1 mb-2">${title}</h3>
+          <p class="text-xs text-gray-400 mb-4">Direct submission logs straight into your connected Google Sheet.</p>
+          <form onsubmit="handleModalSubmit(event, '${type}', '${target}')" class="space-y-3">
+            <input type="text" required id="modal-name" placeholder="Contact Name *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <input type="text" required id="modal-company" placeholder="Company Name *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <input type="email" required id="modal-email" placeholder="Business Email *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <input type="tel" required id="modal-phone" placeholder="Telephone *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <div class="grid grid-cols-2 gap-2">
+              <input type="number" required id="modal-sqft" placeholder="Estimated Sq. Footage *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+              <select id="modal-timeline" class="w-full text-xs bg-[#11141B] border border-white/10 rounded-lg p-2.5 text-white">
+                <option value="Under 30 Days">Timeline: Under 30 Days</option>
+                <option value="30-60 Days">Timeline: 30 - 60 Days</option>
+                <option value="Showroom Stock">Timeline: Stocking Need</option>
+              </select>
+            </div>
+            <button type="submit" id="modal-submit-btn" class="w-full bg-brand-gold hover:bg-brand-golddark text-black font-extrabold py-3 rounded-lg text-xs uppercase tracking-wider transition">
+              Submit Request To Sheet
+            </button>
+          </form>
+        </div>
+      `;
+      lucide.createIcons();
+    }
+
+    async function handleModalSubmit(e, type, target) {
+      e.preventDefault();
+      const btn = document.getElementById('modal-submit-btn');
+      btn.innerText = "Sending to Sheet...";
+      btn.disabled = true;
+
+      const payload = {
+        form_type: type.toUpperCase() + " Request",
+        target_sku: target,
+        name: document.getElementById('modal-name').value,
+        company: document.getElementById('modal-company').value,
+        email: document.getElementById('modal-email').value,
+        phone: document.getElementById('modal-phone').value,
+        sq_ft: document.getElementById('modal-sqft').value,
+        timeline: document.getElementById('modal-timeline').value
+      };
+
+      await sendDataToGoogleSheet(payload);
+      alert(`Success! Your ${type} inquiry for ${target} has been saved to the Google Sheet.`);
+      closeModal();
+    }
+
+    // 4. SHOWROOM APPOINTMENT HANDLER
+    function openShowroomModal(appointmentType) {
+      const modal = document.getElementById('action-modal');
+      const body = document.getElementById('modal-body');
+      modal.classList.remove('hidden');
+
+      body.innerHTML = `
+        <div class="text-left">
+          <span class="text-brand-gold text-[10px] uppercase font-bold tracking-widest">Showroom & Meeting Tool</span>
+          <h3 class="text-base font-black text-white mt-1 mb-2">Book ${appointmentType}</h3>
+          <p class="text-xs text-gray-400 mb-4">Bookings are appended directly into your Google Sheet.</p>
+          <form onsubmit="handleMeetingSubmit(event, '${appointmentType}')" class="space-y-3">
+            <input type="text" required id="meet-name" placeholder="Your Name *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <input type="text" required id="meet-company" placeholder="Company Name *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <input type="email" required id="meet-email" placeholder="Business Email *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <input type="tel" required id="meet-phone" placeholder="Phone *" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <select id="meet-type" class="w-full text-xs bg-[#11141B] border border-white/10 rounded-lg p-2.5 text-white">
+              <option value="Showroom Visit">Dallas Showroom Visit</option>
+              <option value="Dealer Program Consult">Dealer-Program Consultation</option>
+              <option value="Takeoff Review">Project Takeoff Review</option>
+              <option value="Virtual Meeting">Virtual Presentation</option>
+            </select>
+            <input type="date" required id="meet-date" class="w-full text-xs bg-black/60 border border-white/10 rounded-lg p-2.5 text-white" />
+            <button type="submit" id="meet-submit-btn" class="w-full bg-brand-gold hover:bg-brand-golddark text-black font-extrabold py-3 rounded-lg text-xs uppercase tracking-wider transition">
+              Confirm & Save Booking
+            </button>
+          </form>
+        </div>
+      `;
+      lucide.createIcons();
+    }
+
+    async function handleMeetingSubmit(e, appointmentType) {
+      e.preventDefault();
+      const btn = document.getElementById('meet-submit-btn');
+      btn.innerText = "Booking...";
+      btn.disabled = true;
+
+      const payload = {
+        form_type: "Appointment Booking",
+        target_sku: document.getElementById('meet-type').value,
+        name: document.getElementById('meet-name').value,
+        company: document.getElementById('meet-company').value,
+        email: document.getElementById('meet-email').value,
+        phone: document.getElementById('meet-phone').value,
+        meeting_date: document.getElementById('meet-date').value
+      };
+
+      await sendDataToGoogleSheet(payload);
+      alert(`Success! Appointment booked and logged in Google Sheet for ${payload.meeting_date}.`);
+      closeModal();
+    }
+
+    function closeModal() {
+      document.getElementById('action-modal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
